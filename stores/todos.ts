@@ -29,7 +29,7 @@ export const useTodosStore = defineStore('todoStore', {
                     body: JSON.stringify(todo),
                 })
                 if (error.value) throw error.value
-                await this.fetchTodos();
+                this.todos.push(data.value!);
             } catch (err) {
                 this.error = err as Error
             } finally {
@@ -44,7 +44,8 @@ export const useTodosStore = defineStore('todoStore', {
                     body: JSON.stringify(todo),
                 })
                 if (error.value) throw error.value
-                await this.fetchTodos();
+                const index = this.todos.findIndex((t) => t.id === todo.id);
+                if (index !== -1) this.todos[index] = data.value!;
             } catch (err) {
                 this.error = err as Error
             } finally {

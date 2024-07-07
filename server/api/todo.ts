@@ -25,17 +25,17 @@ const getTodo = async () => {
 
 const addTodo = async (event: any) => {
     const postBody = await readBody(event);
-    const { data: data, error: postError } = await supabase.from('todo_table').insert(postBody)
+    const { data: data, error: postError } = await supabase.from('todo_table').insert(postBody).select()
     if (postError) throw createError({ statusCode: 500, message: postError.message })
-    return data;
+    return data[0];
 }
 
 const updateTodo = async (event: any) => {
     const putBody = await readBody(event);
     const { id, ...updates } = putBody
-    const { data: updateData, error: putError } = await supabase.from('todo_table').update(updates).eq('id', id)
+    const { data: updateData, error: putError } = await supabase.from('todo_table').update(updates).eq('id', id).select()
     if (putError) throw createError({ statusCode: 500, message: putError.message })
-    return updateData
+    return updateData[0]
 }
 
 const deleteTodo = async (event: any) => {
