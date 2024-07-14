@@ -1,75 +1,18 @@
-# Nuxt 3 Minimal Starter
+# Dokumentasi
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Tech Stack 
+- Nuxt 3
+- Pinia
+- Supabase
 
 ## Setup
+Prerequisites
+- Node.js - v18.0.0 or newer
+- Text editor - We recommend Visual Studio Code with the official Vue extension (previously known as Volar)
+- Terminal - In order to run Nuxt commands
 
-Make sure to install the dependencies:
+## Install Depedencies
+- Run npm install on terminal
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Run Project
+- Run npm run dev on terminal
