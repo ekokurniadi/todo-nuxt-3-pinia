@@ -15,20 +15,20 @@ Ensure you have the following installed on your machine:
 - **Text Editor:** We recommend Visual Studio Code with the official Vue extension (previously known as Volar) for a better development experience. You can download it from [code.visualstudio.com](https://code.visualstudio.com/).
 - **Terminal:** You will need to use the terminal to run Nuxt commands.
 
-### Install Dependencies
+## Install Dependencies
 1. Open your terminal.
 2. Navigate to your project directory.
 3. Run the following command to install the necessary dependencies:
    ```sh
    npm install
 
-### Run Project
+## Run Project
 1. Open your terminal.
 2. Navigate to your project directory.
 3. Run the following command to start the development server :
    ```sh
      npm run dev
-### Project Structure
+## Project Structure
 
 ├── components<br/>
 ├── layouts<br/>
@@ -62,7 +62,10 @@ Ensure you have the following installed on your machine:
 - package.json: Project metadata and dependencies.
 - tsconfig.json: TypeScript configuration file.
 
-### Resources
+## Deployment
+1. Netlify Documentation: https://docs.netlify.com/frameworks/nuxt/ 
+
+## Resources
 1. Nuxt 3 Documentation: https://nuxt.com/docs/getting-started/introduction
 2. Pinia Documentation: https://pinia.vuejs.org/getting-started.html
 3. Supabase Documentation: [Supabase Docs](https://supabase.com/docs)
