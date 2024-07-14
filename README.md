@@ -43,8 +43,7 @@ Ensure you have the following installed on your machine:
 ├── app.vue<br/>
 ├── nuxt.config.ts<br/>
 ├── package-lock.json<br/>
-├── package.json<br/>
-└── tsconfig.json<br/>
+├── package.json<br/>└── tsconfig.json<br/>
 
 - components: Directory for Vue components.
 - layouts: Directory for layout components.
